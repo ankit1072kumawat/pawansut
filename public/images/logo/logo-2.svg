@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156 31">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-2 {
+        font-family: Aquawax-Black, Aquawax;
+        font-size: 10.79px;
+        font-weight: 800;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #1e1e1e;
+      }
+
+      .cls-4 {
+        fill: #3e85c5;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        font-family: Aquawax-Light, Aquawax;
+        font-size: 6.04px;
+        font-weight: 300;
+      }
+
+      .cls-6 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-4" d="M35.48,6.95L46.37.7l9.27,5.33.03,6.35-9.29,5.33v-4.46l5.44-3.13.03-.08c-.05-.52.06-1.15,0-1.65,0-.04,0-.08-.04-.11l-5.48-3.12-6.98,4.04-.02,18.83-.1.13-3.76,2.14V6.95Z"/>
+    <path class="cls-4" d="M44.78,20.42v-8.06l5.43-3.15-3.83-2.22-5.42,3.13v10.8s5.41,3.1,5.41,3.1l9.31-5.34v-4.46l-10.9,6.2ZM46.54,8.36l.06-.06h.75l.06.06v.81h-.81l-.06-.06v-.75ZM46.54,9.45l.06-.06h.75l.06.06v.81h-.81l-.06-.06v-.75ZM45.49,8.36l.06-.06h.75l.06.06v.81h-.86v-.81ZM45.49,9.45l.06-.06h.75l.06.06v.81h-.86v-.81Z"/>
+    <polygon class="cls-4" points="40.95 22.76 44.78 24.97 40.95 27.15 40.95 22.76"/>
+  </g>
+  <g>
+    <text class="cls-2" transform="translate(58.47 15.51)"><tspan class="cls-1" x="0" y="0">P</tspan><tspan class="cls-6" x="6.56" y="0">A</tspan><tspan class="cls-1" x="13.69" y="0">W</tspan><tspan class="cls-7" x="24.09" y="0">ANSUT</tspan></text>
+    <text class="cls-3" transform="translate(58.75 21.54)"><tspan x="0" y="0">Contruction Compa</tspan><tspan class="cls-5" x="54.72" y="0">n</tspan><tspan x="58.14" y="0">y</tspan></text>
+  </g>
+</svg>
