@@ -17,9 +17,9 @@ const featuresData: Feature[] = [
         className="h-full w-full object-cover"
       />
     ),
-    title: "Planning & Design",
+    title: "Innovative Design",
     paragraph:
-      "Blueprints, site surveys, and cost estimates to guide every build.",
+      "Smart planning and creative solutions that transform ideas into reality.",
   },
   {
     id: 2,
@@ -27,12 +27,12 @@ const featuresData: Feature[] = [
       <img
         src="https://cdn.prod.website-files.com/640bd3c70828ca85b5021dd0/640bd3c70828cae197021ee9_61eeb4cd65031c2053837f26_610c70c4f92b924ea5cf0881_1039121731-huge-4mb-p-1080.jpg"
         alt="Management icon"
-        className="w-full h-full object-cover"
+        className="h-full w-full object-cover"
       />
     ),
-    title: "Project Management",
+    title: "Expert Execution",
     paragraph:
-      "Scheduling, team coordination, and code compliance throughout the process.",
+      "Skilled professionals ensuring precision, safety, and on-time delivery.",
   },
   {
     id: 3,
@@ -40,12 +40,12 @@ const featuresData: Feature[] = [
       <img
         src="https://miro.medium.com/v2/resize:fit:1400/1*k64Y5O9JnTHs9opKuGrCuQ.jpeg"
         alt="Material icon"
-        className="w-full h-full object-cover"
+        className="h-full w-full object-cover"
       />
     ),
-    title: "Material Selection",
+    title: "Quality Materials",
     paragraph:
-      "Choosing strong, sustainable, and cost-effective materials for every structure.",
+      "Using only trusted, durable materials for lasting value and reliability.",
   },
   {
     id: 4,
@@ -53,12 +53,12 @@ const featuresData: Feature[] = [
       <img
         src="https://content.jdmagicbox.com/v2/comp/dehradun/y7/9999px135.x135.240712160651.q1y7/catalogue/ar-interiors-and-exterior-designing-dehradun-construction-contractors-nks83ouo1r.jpg"
         alt="Material icon"
-        className="w-full h-full object-cover"
+        className="h-full w-full object-cover"
       />
     ),
     title: "Structural Work",
     paragraph:
-      "Foundations, framing, and roofing that form the backbone of your building.",
+      "Strong foundations, expert framing, and durable roofing that create the backbone of your building.",
   },
   // {
   //   id: 5,
@@ -79,7 +79,7 @@ const featuresData: Feature[] = [
       <img
         src="https://img.freepik.com/free-photo/building-construction-workers-site_23-2149124309.jpg"
         alt="Material icon"
-        className="w-full h-full object-cover"
+        className="h-full w-full object-cover"
       />
     ),
     title: "Finishing & Interiors",
@@ -92,12 +92,12 @@ const featuresData: Feature[] = [
       <img
         src="https://planradar-website.s3.amazonaws.com/production/uploads/2023/08/workers-on-site.jpg"
         alt="Material icon"
-        className="w-full h-full object-cover"
+        className="h-full w-full object-cover"
       />
     ),
     title: "Safety & Quality Control",
     paragraph:
-      "Rigorous inspections and safety protocols ensure durability and compliance.",
+      "Rigorous inspections and proven safety protocols ensure long-lasting durability and compliance.",
   },
   // {
   //   id: 8,

@@ -8,7 +8,7 @@ const checkIcon = (
 );
 
 const AboutSectionOne = () => {
-  const List = ({ text }) => (
+  const List = ({ text }: { text: string }) => (
     <p className="text-body-color mb-5 flex items-center text-lg font-medium">
       <span className="bg-primary/10 text-primary mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md">
         {checkIcon}
@@ -22,11 +22,12 @@ const AboutSectionOne = () => {
       <div className="container">
         <div className="border-body-color/[.15] border-b pb-16 md:pb-20 lg:pb-28 dark:border-white/[.15]">
           <div className="-mx-4 flex flex-wrap items-center">
+            {/* Left */}
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Building Foundations. Shaping Skylines."
-                paragraph="Our mission is to transform spaces into landmarks. We believe in honest construction, timely delivery, and client-centric service. With decades of combined experience in the industry, our team ensures that each project meets the highest standards of design, safety, and durability."
-                mb="44px"
+                title="Building Excellence"
+                paragraph="Since 2010, we’ve been building budget-friendly homes with modern designs, uncompromised quality, and timely delivery."
+                mb="28px"
               />
 
               <div
@@ -46,23 +47,35 @@ const AboutSectionOne = () => {
                     <List text="Customer Satisfaction Focused" />
                   </div>
                 </div>
+
+                {/* Detailed mission for depth */}
+                <p className="text-body-color/90 mt-4 text-base leading-relaxed">
+                  Established in 2010, our mission has been to transform spaces
+                  into landmarks by delivering budget-friendly homes without
+                  compromising on quality. We believe in honest construction,
+                  timely delivery, and client-focused service. With decades of
+                  combined experience, every project reflects modern design,
+                  safety, and durability—crafted with the latest tools and
+                  architectural standards.
+                </p>
               </div>
             </div>
 
+            {/* Right */}
             <div className="w-full px-4 lg:w-1/2">
-              <div className="relative mx-auto aspect-25/24 max-w-[500px] lg:mr-0">
-                <Image
-                  src="/images/about/about-image.svg"
-                  alt="about-image"
-                  fill
-                  className="drop-shadow-three mx-auto max-w-full lg:mr-0 dark:hidden dark:drop-shadow-none"
-                />
-                <Image
-                  src="/images/about/about-image-dark.svg"
-                  alt="about-image"
-                  fill
-                  className="drop-shadow-three mx-auto hidden max-w-full lg:mr-0 dark:block dark:drop-shadow-none"
-                />
+              <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
+                <div className="absolute inset-0 overflow-hidden rounded-2xl shadow-2xl ring-1 ring-black/10 dark:ring-white/10">
+                  <Image
+                    src="/images/about/about-us.jpg"
+                    alt="About us"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 500px"
+                    priority
+                  />
+                </div>
+                {/* subtle glow */}
+                <span className="bg-primary/20 pointer-events-none absolute -inset-4 -z-10 block rounded-[1.75rem] opacity-30 blur-3xl" />
               </div>
             </div>
           </div>

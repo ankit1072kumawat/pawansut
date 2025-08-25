@@ -6,12 +6,14 @@ const Features = () => {
   return (
     <>
       {/* <section id="features" className="py-16 md:py-20 lg:py-28"> */}
-        <section id="features" className="py-16 md:py-20 lg:py-28 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
-
+      <section
+        id="features"
+        className="bg-gradient-to-b from-gray-50 to-white py-16 md:py-20 lg:py-28 dark:from-gray-900 dark:to-gray-800"
+      >
         <div className="container">
           <SectionTitle
-            title="Main Features"
-            paragraph="From blueprint to handover, our core features cover every phase of construction—designed for precision, built for lasting impact."
+            title="Building Excellence"
+            paragraph="Whether it’s residential, commercial, or infrastructure projects, we deliver unmatched quality and trust that stand the test of time."
             center
           />
 

@@ -28,7 +28,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         {/* <div className="mb-5 flex h-[110px] w-[110px] items-center justify-center rounded-full bg-gray-100 shadow-md transition-transform duration-300 group-hover:scale-105">
           {icon}
         </div> */}
-        <div className="mb-6 flex h-[140px] w-[140px] items-center justify-center overflow-hidden rounded-2xl shadow-xl md:h-[180px] md:w-[180px] lg:h-[200px] lg:w-[200px]">
+        <div className="mb-6 flex h-[140px] w-[140px] items-center justify-center overflow-hidden rounded-2xl shadow-xl md:h-[180px] md:w-[180px] lg:h-[200px] lg:w-[300px]">
           {icon}
         </div>
 

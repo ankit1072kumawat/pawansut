@@ -108,12 +108,22 @@ const Header = () => {
                     {menuData.map((menuItem, index) => (
                       <li key={index} className="group relative">
                         {menuItem.path ? (
+                          // <Link
+                          //   href={menuItem.path}
+                          //   className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                          //     usePathName === menuItem.path
+                          //       ? "text-primary dark:text-white"
+                          //       : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                          //   }`}
+                          // >
+                          //   {menuItem.title}
+                          // </Link>
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                            className={`flex py-2 text-base font-semibold lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
-                                ? "text-primary dark:text-white"
-                                : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                                ? "text-white drop-shadow-lg"
+                                : "text-white/90 drop-shadow-lg hover:text-orange-500"
                             }`}
                           >
                             {menuItem.title}
