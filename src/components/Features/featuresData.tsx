@@ -17,9 +17,9 @@ const featuresData: Feature[] = [
         className="h-full w-full object-cover"
       />
     ),
-    title: "Innovative Design",
+    title: "Innovative Designs",
     paragraph:
-      "Smart planning and creative solutions that transform ideas into reality.",
+      "",
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const featuresData: Feature[] = [
     ),
     title: "Expert Execution",
     paragraph:
-      "Skilled professionals ensuring precision, safety, and on-time delivery.",
+      "",
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const featuresData: Feature[] = [
     ),
     title: "Quality Materials",
     paragraph:
-      "Using only trusted, durable materials for lasting value and reliability.",
+      "",
   },
   {
     id: 4,
@@ -56,25 +56,12 @@ const featuresData: Feature[] = [
         className="h-full w-full object-cover"
       />
     ),
-    title: "Structural Work",
+    title: "Durable Structural Work",
     paragraph:
-      "Strong foundations, expert framing, and durable roofing that create the backbone of your building.",
+      "",
   },
-  // {
-  //   id: 5,
-  //   icon: (
-  //     <img
-  //       src="https://content.jdmagicbox.com/v2/comp/dehradun/y7/9999px135.x135.240712160651.q1y7/catalogue/ar-interiors-and-exterior-designing-dehradun-construction-contractors-nks83ouo1r.jpg"
-  //       alt="Material icon"
-  //       className="w-full h-full object-cover"
-  //     />
-  //   ),
-  //   title: "MEP Systems",
-  //   paragraph:
-  //     "Integrated electrical, plumbing, and HVAC systems designed for efficiency.",
-  // },
   {
-    id: 6,
+    id: 5,
     icon: (
       <img
         src="https://img.freepik.com/free-photo/building-construction-workers-site_23-2149124309.jpg"
@@ -84,10 +71,10 @@ const featuresData: Feature[] = [
     ),
     title: "Finishing & Interiors",
     paragraph:
-      "Paint, flooring, tiling, and all the details that complete your space.",
+      "",
   },
   {
-    id: 7,
+    id: 6,
     icon: (
       <img
         src="https://planradar-website.s3.amazonaws.com/production/uploads/2023/08/workers-on-site.jpg"
@@ -97,21 +84,8 @@ const featuresData: Feature[] = [
     ),
     title: "Safety & Quality Control",
     paragraph:
-      "Rigorous inspections and proven safety protocols ensure long-lasting durability and compliance.",
+      "",
   },
-  // {
-  //   id: 8,
-  //   icon: (
-  //     <img
-  //       src="https://www.spec-net.com.au/press/1212/ker_121212/images/ker121212_img01.jpg"
-  //       alt="Material icon"
-  //       className="w-full h-full object-cover"
-  //     />
-  //   ),
-  //   title: "Handover & Maintenance",
-  //   paragraph:
-  //     "Smooth final delivery, inspections, and long-term maintenance planning.",
-  // },
 ];
 
 export default featuresData;

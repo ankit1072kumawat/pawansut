@@ -1,5 +1,6 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+// import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+import Accomplishments from "@/components/Accomplements";
 import Blog from "@/components/Blog";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
@@ -7,6 +8,7 @@ import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
+import ServicesSlider from "@/components/serviceSlider";
 import ServicesSliderPage from "@/components/serviceSlider";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
@@ -24,12 +26,13 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Features />
-      <ServicesSliderPage />
+      <ServicesSlider />
       {/* <Video /> */}
-      {/* <Brands /> */}
+      <Accomplishments />
       <AboutSectionOne />
-      <AboutSectionTwo />
-      <Testimonials />
+      <Brands />
+      {/* <AboutSectionTwo /> */}
+      {/* <Testimonials /> */}
       {/* <Pricing /> */}
       <Blog />
       <Contact />

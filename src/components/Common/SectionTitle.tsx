@@ -31,19 +31,25 @@
 
 
 import { motion } from "framer-motion";
+import { ReactNode } from "react";
 
 
 interface SectionTitleProps {
   title: string;
-  paragraph?: string;
+  paragraph: string | ReactNode;
   center?: boolean;
+  paragraphClass?: string;
 }
 
-const SectionTitle = ({ title, paragraph, center }: SectionTitleProps) => {
+const SectionTitle = ({ title, paragraph, center, paragraphClass }: SectionTitleProps) => {
   return (
     <motion.div
       className={`mb-12 ${
-        center ? "mx-auto max-w-2xl text-center" : "text-left"
+        center
+          ? paragraphClass
+            ? "mx-auto text-center"
+            : "mx-auto max-w-2xl text-center"
+          : "text-left"
       }`}
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
