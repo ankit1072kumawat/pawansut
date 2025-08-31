@@ -15,7 +15,7 @@ const Blog = () => {
     <>
       <Breadcrumb
         pageName="Blog Grid"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Explore stunning properties designed for comfort, elegance, and relaxation. Surrounded by lush greenery and featuring private swimming pools, these homes—whether a farmhouse, bungalow, villa, or cottage—offer the perfect blend of nature and luxury. Ideal for peaceful living, family getaways, or a serene lifestyle escape."
       />
 
       <section className="pt-[120px] pb-[120px]">
