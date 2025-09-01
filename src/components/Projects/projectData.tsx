@@ -1,6 +1,6 @@
-import { Blog } from "@/types/blog";
+import { Project } from "@/types/project";
 
-const blogData: Blog[] = [
+const projectData: Project[] = [
   {
     id: 1,
     title: "Dream Farmhouse Living: Serenity with Lush Lawns and a Pool",
@@ -8,7 +8,7 @@ const blogData: Blog[] = [
       "Escape into the charm of a serene farmhouse surrounded by lush green grass and a refreshing swimming pool. Perfect for nature lovers and relaxation seekers, this haven combines rustic beauty with modern comfort. Whether it’s a weekend getaway or a peaceful lifestyle choice, a farmhouse with a pool offers the ultimate blend of tranquility and luxury.",
     image: "/images/blog/blog-01.png",
     author: {
-      name: "Nand Kishor Kumawat",
+      name: "Anand Singh ji",
       image: "/images/blog/author-01.png",
       Location: "Kalwar",
     },
@@ -22,7 +22,7 @@ const blogData: Blog[] = [
       "Discover the beauty of a stylish bungalow surrounded by a lush green lawn and complemented by a private swimming pool. Offering comfort, space, and a touch of luxury, this bungalow is perfect for peaceful living or weekend retreats. With its serene environment and modern amenities, it creates the ideal balance between relaxation and elegance.",
     image: "/images/blog/blog-02.png",
     author: {
-      name: "Ashok Kumar Kumawat",
+      name: "Ashok Kumar Ji",
       image: "/images/blog/author-02.png",
       Location: "Jhotwara",
     },
@@ -36,11 +36,11 @@ const blogData: Blog[] = [
       "Discover the charm of a modern villa located in a prime area, surrounded by refreshing greenery. Designed for comfort and sophistication, this villa offers the perfect mix of convenience and serenity. An ideal choice for families or individuals seeking a luxurious lifestyle in a well-connected location.",
     image: "/images/blog/blog-03.png",
     author: {
-      name: "Gopal Lal Kumawat",
+      name: "Gopal Lal Ji",
       image: "/images/blog/author-03.png",
       Location: "Contractor",
     },
-    tags: ["Murlipura"],
+    tags: ["Bungalow"],
     publishDate: "2025",
   },
   {
@@ -50,11 +50,11 @@ const blogData: Blog[] = [
       "Experience the elegance of a full duplex villa that combines spacious design with contemporary living. Situated in a prime location and surrounded by a peaceful environment, it offers comfort, privacy, and style for families. A perfect blend of luxury and convenience for modern lifestyles.",
     image: "/images/blog/blog-04.png",
     author: {
-      name: "Malu Ram Kumawat",
+      name: "Malu Ram Ji",
       image: "/images/blog/author-01.png",
       Location: "Gopalpura",
     },
-    tags: ["Full Duplex Villa"],
+    tags: ["Full Duplex"],
     publishDate: "2025",
   },
   {
@@ -64,11 +64,11 @@ const blogData: Blog[] = [
       "Discover the charm of a Full duplex villa designed for comfort, functionality, and style. Located in a prime area, it offers the perfect balance of space and affordability. With modern amenities and a serene environment, it’s an ideal choice for families seeking a practical yet elegant lifestyle.",
     image: "/images/blog/blog-05.png",
     author: {
-      name: "Ankit Ji",
+      name: "Dheeraj Ji",
       image: "/images/blog/author-02.png",
-      Location: "Laxmi Nager",
+      Location: "Malviya Nagar",
     },
-    tags: ["Full Duplex Villa"],
+    tags: ["Full Duplex"],
     publishDate: "2025",
   },
   {
@@ -82,21 +82,21 @@ const blogData: Blog[] = [
       image: "/images/blog/author-03.png",
       Location: "Sikar Road",
     },
-    tags: ["Vidhyadhar Nagar"],
+    tags: ["Commercial"],
     publishDate: "2025",
   },
-    {
+  {
     id: 7,
     title: "Luxury Hotel in a Prime Location with Modern Amenities",
     paragraph:
       "Stay in comfort at a luxury hotel designed to offer world-class service and modern conveniences. Located in a prime area, it provides easy access to the city’s attractions while ensuring a peaceful and relaxing stay. Perfect for business trips, vacations, or weekend getaways.",
     image: "/images/blog/blog-07.png",
     author: {
-      name: "Amit Ji",
+      name: "Nikilesh Ji",
       image: "/images/blog/author-01.png",
       Location: "Mansarover",
     },
-    tags: ["Hotel"],
+    tags: ["Commercial"],
     publishDate: "2025",
   },
   {
@@ -106,11 +106,11 @@ const blogData: Blog[] = [
       "Step into luxury with a fully furnished full duplex villa, designed for elegance and modern comfort. Situated in a prime location, this villa offers spacious living, premium interiors, and a ready-to-move-in experience. Perfect for families seeking convenience, style, and a sophisticated lifestyle.",
     image: "/images/blog/blog-08.png",
     author: {
-      name: "Shailendra Ji",
+      name: "Sugan Lal Ji",
       image: "/images/blog/author-02.png",
       Location: "Govindpura Kalwar Road",
     },
-    tags: ["Fully Furnished Full Duplex Villa"],
+    tags: ["Full Duplex"],
     publishDate: "2025",
   },
   {
@@ -124,8 +124,8 @@ const blogData: Blog[] = [
       image: "/images/blog/author-03.png",
       Location: "Kalwar Road Govindpura",
     },
-    tags: ["Semi-Furnished Semi Duplex Villa"],
+    tags: ["Semi Duplex Villa"],
     publishDate: "2025",
   },
 ];
-export default blogData;
+export default projectData;
