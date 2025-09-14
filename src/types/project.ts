@@ -1,10 +1,11 @@
 type Author = {
   name: string;
   image: string;
-  designation: string;
+  // designation: string;
+  Location: string;
 };
 
-export type Blog = {
+export type Project = {
   id: number;
   title: string;
   paragraph: string;

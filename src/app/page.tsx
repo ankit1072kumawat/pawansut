@@ -1,7 +1,7 @@
+import { Metadata } from "next";
 import AboutSectionOne from "@/components/About/AboutSectionOne";
-// import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Accomplishments from "@/components/Accomplements";
-import Blog from "@/components/Blog";
+import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+import Projects from "@/components/Projects";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
@@ -12,7 +12,7 @@ import ServicesSlider from "@/components/serviceSlider";
 import ServicesSliderPage from "@/components/serviceSlider";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
-import { Metadata } from "next";
+import Accomplishments from "@/components/Accomplements";
 
 export const metadata: Metadata = {
   title: "Pawansut Construction Company",
@@ -34,7 +34,7 @@ export default function Home() {
       {/* <AboutSectionTwo /> */}
       {/* <Testimonials /> */}
       {/* <Pricing /> */}
-      <Blog />
+      <Projects />
       <Contact />
     </>
   );

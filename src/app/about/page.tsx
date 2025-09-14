@@ -18,7 +18,7 @@ const AboutPage = () => {
         description="We are committed to redefining the standards of construction and real estate across India. With a passion for quality and a vision for innovation, we specialize in delivering robust residential, commercial, and infrastructure projects that stand the test of time."
       />
       <AboutSectionOne />
-      <AboutSectionTwo />
+      {/* <AboutSectionTwo /> */}
     </>
   );
 };

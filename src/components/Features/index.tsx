@@ -13,16 +13,7 @@ const Features = () => {
           <SectionTitle
             title="Building Excellence"
             paragraph={
-              <p className="mt-2 text-center text-gray-600">
-                We are a{" "}
-                <strong>leading home construction company in Rajasthan</strong>,
-                delivering durable, modern, and affordable homes with a strong
-                commitment to <strong>on-time project delivery</strong> and
-                unmatched quality. Our focus on{" "}
-                <strong>
-                  customer satisfaction, premium materials, and expert execution
-                </strong>
-              </p>
+              "We are a leading home construction company in Jaipur delivering durable, modern, and affordable homes with a strong commitment to on-time project delivery and unmatched quality. Our focus on customer satisfaction, premium materials, and expert execution"
             }
             center
             paragraphClass="full-width"

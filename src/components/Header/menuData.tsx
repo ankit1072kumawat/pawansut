@@ -16,15 +16,10 @@ const menuData: Menu[] = [
   // {
   //   id: 3,
   //   title: "All Projects",
-  //   path: "/blog",
+  //   path: "/projects",
   //   newTab: false,
   // },
-  // {
-  //   id: 4,
-  //   title: "Blogs",
-  //   path: "/blog",
-  //   newTab: false,
-  // },
+
   {
     id: 5,
     title: "Contact Us",

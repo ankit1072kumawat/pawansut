@@ -3,17 +3,23 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import "swiper/css";
 import brandsData from "./brandsData";
 
 export default function Brands() {
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-20">
       <div className="container mx-auto px-4">
-        <h2 className="mb-12 text-center text-2xl font-semibold text-gray-900">
+        <motion.h2
+          className="mb-12 text-center text-3xl font-bold text-white"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false }}
+        >
           Brands that we trust
-        </h2>
+        </motion.h2>
 
         <Swiper
           modules={[Autoplay]}

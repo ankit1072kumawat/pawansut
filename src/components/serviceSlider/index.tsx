@@ -75,11 +75,14 @@ export default function ServicesSlider() {
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute bottom-2 left-4 rounded-md bg-black/60 px-3 py-1 text-base font-medium text-white cursor-pointer">
-                    Such Projects →
+                  <div className="absolute bottom-2 left-4 cursor-pointer rounded-md bg-black/60 px-3 py-1 text-base font-medium text-white">
+                    <a
+                      href="#projects"
+                    >
+                      Such Projects →
+                    </a>
                   </div>
                 </div>
-
               </div>
             </SwiperSlide>
           ))}
