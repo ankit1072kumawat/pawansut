@@ -7,18 +7,18 @@ const SingleProject = ({ project }: { project: Project }) => {
   return (
     <div className="group dark:bg-dark dark:hover:shadow-gray-dark relative overflow-hidden rounded-xl bg-white shadow-md transition-all duration-300 hover:shadow-xl">
       {/* Project Image */}
-      <div className="relative block aspect-37/22 w-full overflow-hidden rounded-t-xl">
+      <div className="relative aspect-[29/22] w-full overflow-hidden rounded-t-xl bg-gray-800/10">
         <span className="bg-primary absolute top-4 right-4 z-20 inline-flex items-center justify-center rounded-full px-3 py-1 text-xs font-semibold text-white capitalize shadow-md">
           {tags[0]}
         </span>
-        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-t-xl">
-          <Image
-            src={image}
-            alt={title}
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-        </div>
+
+        <Image
+          src={image}
+          alt={title}
+          fill
+          sizes="(min-width: 1280px) 420px, (min-width: 768px) 50vw, 100vw"
+          className="rounded-t-xl  object-center transition-transform duration-300"
+        />
       </div>
 
       {/* Bottom Section */}
@@ -35,19 +35,19 @@ const SingleProject = ({ project }: { project: Project }) => {
         <div className="flex items-center justify-between">
           {/* Author */}
           <div>
-            <h4 className="text-dark mb-1 text-sm font-medium dark:text-white">
+            <h4 className="text-dark mb-1 text-sm font-large dark:text-white">
               {author.name}
             </h4>
             <p className="text-body-color text-xs">{author.Location}</p>
           </div>
 
           {/* Date */}
-          <div className="text-right">
+          {/* <div className="text-right">
             <h4 className="text-dark mb-1 text-sm font-medium dark:text-white">
               Date
             </h4>
             <p className="text-body-color text-xs">{publishDate}</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
