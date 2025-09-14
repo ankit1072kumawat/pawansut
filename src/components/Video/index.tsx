@@ -16,7 +16,7 @@ export default function Video() {
             title="We are ready to help"
             paragraph=""
             center
-            mb="80px"
+            // mb="80px"
           />
         </div>
         <div className="relative overflow-hidden">

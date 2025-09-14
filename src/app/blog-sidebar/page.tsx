@@ -332,7 +332,7 @@ const BlogSidebarPage = () => {
                         Share this post :
                       </h5>
                       <div className="flex items-center sm:justify-end">
-                        <SharePost />
+                        {/* <SharePost /> */}
                       </div>
                     </div>
                   </div>
@@ -372,28 +372,28 @@ const BlogSidebarPage = () => {
                 </h3>
                 <ul className="p-8">
                   <li className="border-body-color/10 mb-6 border-b pb-6 dark:border-white/10">
-                    <RelatedPost
+                    {/* <RelatedPost
                       title="Best way to boost your online sales."
                       image="/images/blog/post-01.jpg"
                       slug="#"
                       date="12 Feb 2025"
-                    />
+                    /> */}
                   </li>
                   <li className="border-body-color/10 mb-6 border-b pb-6 dark:border-white/10">
-                    <RelatedPost
+                    {/* <RelatedPost
                       title="50 Best web design tips & tricks that will help you."
                       image="/images/blog/post-02.jpg"
                       slug="#"
                       date="15 Feb, 2024"
-                    />
+                    /> */}
                   </li>
                   <li>
-                    <RelatedPost
+                    {/* <RelatedPost
                       title="The 8 best landing page builders, reviewed"
                       image="/images/blog/post-03.jpg"
                       slug="#"
                       date="05 Jun, 2024"
-                    />
+                    /> */}
                   </li>
                 </ul>
               </div>
