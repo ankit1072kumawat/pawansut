@@ -1,5 +1,3 @@
-import RelatedPost from "@/components/Projects/RelatedPost";
-import SharePost from "@/components/Projects/SharePost";
 import TagButton from "@/components/Projects/TagButton";
 import NewsLatterBox from "@/components/Contact/NewsLatterBox";
 import Image from "next/image";
@@ -7,8 +5,8 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Details Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Details Page for Startup Nextjs Template",
+  title: "Blog Details Page ",
+  description: "",
   // other metadata
 };
 

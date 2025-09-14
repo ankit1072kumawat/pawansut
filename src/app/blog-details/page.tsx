@@ -1,12 +1,11 @@
-import SharePost from "@/components/Projects/SharePost";
 import TagButton from "@/components/Projects/TagButton";
 import Image from "next/image";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Details Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Details Page for Startup Nextjs Template",
+  title: "Blog Details Page",
+  description: "",
   // other metadata
 };
 
@@ -330,7 +329,7 @@ const BlogDetailsPage = () => {
                         Share this post :
                       </h5>
                       <div className="flex items-center sm:justify-end">
-                        <SharePost />
+                        {/* <SharePost /> */}
                       </div>
                     </div>
                   </div>
