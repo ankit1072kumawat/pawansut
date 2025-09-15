@@ -41,13 +41,13 @@ const Hero = () => {
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href="#contact"
-              className="rounded-xl bg-orange-600 px-8 py-4 text-lg font-semibold text-white shadow-lg transition hover:bg-orange-700"
+              className="rounded-xl bg-orange-600 px-6 py-2 text-sm font-semibold text-white shadow-lg transition hover:bg-orange-700 sm:px-8 sm:py-4 sm:text-lg"
             >
               Get Free Consultation
             </a>
             <a
               href="#projects"
-              className="rounded-xl border border-white px-8 py-4 text-lg font-semibold text-white shadow-lg transition hover:bg-white hover:text-gray-900"
+              className="rounded-xl border border-white px-6 py-2 text-sm font-semibold text-white shadow-lg transition hover:bg-white hover:text-gray-900 sm:px-8 sm:py-4 sm:text-lg"
             >
               View Projects
             </a>

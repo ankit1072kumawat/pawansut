@@ -45,7 +45,7 @@ export default function Brands() {
                 alt={brand.name}
                 width={140}
                 height={80}
-                className="object-contain grayscale transition hover:grayscale-0"
+                className="object-contain"
               />
             </SwiperSlide>
           ))}

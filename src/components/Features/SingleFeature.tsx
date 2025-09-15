@@ -22,8 +22,11 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
   const { icon, title, paragraph } = feature;
 
   return (
-    <div className="w-full">
-      <div className="wow fadeInUp group" data-wow-delay=".15s">
+    <div className="flex w-full items-center justify-center">
+      <div
+        className="wow fadeInUp group flex flex-col items-center justify-center"
+        data-wow-delay=".15s"
+      >
         {/* Icon container */}
         {/* <div className="mb-5 flex h-[110px] w-[110px] items-center justify-center rounded-full bg-gray-100 shadow-md transition-transform duration-300 group-hover:scale-105">
           {icon}

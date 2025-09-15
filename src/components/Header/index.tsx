@@ -57,7 +57,7 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/logo-2.svg"
+                  src="/images/logo/logo--2.svg"
                   alt="logo"
                   width={140}
                   height={30}
@@ -120,11 +120,6 @@ const Header = () => {
                           // </Link>
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base font-semibold lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                              usePathName === menuItem.path
-                                ? "text-white drop-shadow-lg"
-                                : "text-white/90 drop-shadow-lg hover:text-orange-500"
-                            }`}
                           >
                             {menuItem.title}
                           </Link>

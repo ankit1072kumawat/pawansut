@@ -59,7 +59,7 @@ export default function ServicesSlider() {
         >
           {services.map((s, i) => (
             <SwiperSlide key={i}>
-              <div className="group relative h-[420px] w-full overflow-hidden rounded-2xl bg-white shadow-md dark:bg-white/5">
+              <div className="group relative h-[370px] w-full overflow-hidden rounded-2xl bg-white shadow-md sm:h-[420px] dark:bg-white/5">
                 {/* Title */}
                 <div className="p-5">
                   <h3 className="text-xl leading-snug font-semibold text-gray-900 dark:text-white">
@@ -76,11 +76,7 @@ export default function ServicesSlider() {
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute bottom-2 left-4 cursor-pointer rounded-md bg-black/60 px-3 py-1 text-base font-medium text-white">
-                    <a
-                      href="#projects"
-                    >
-                      Such Projects →
-                    </a>
+                    <a href="#projects">Such Projects →</a>
                   </div>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-import NewsLatterBox from "./NewsLatterBox";
+// import NewsLatterBox from "./NewsLatterBox";
 
 const Contact = () => {
   return (
@@ -70,7 +70,7 @@ const Contact = () => {
                       Submit Ticket
                     </button>
                   </div> */}
-                  <div className="space-y-4 text-base text-gray-700">
+                  <div className="space-y-4 text-base text-gray-700 dark:text-white">
                     <p>
                       <strong>📍 Office Address:</strong> 36B Laxmi Nagar,
                       Niwaru raod, Jhotwara, Jaipur, Rajasthan 302012
