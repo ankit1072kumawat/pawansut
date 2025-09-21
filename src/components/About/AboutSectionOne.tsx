@@ -84,10 +84,7 @@ const AboutSectionOne = () => {
                 paragraph="Since 2010, we’ve been building budget-friendly homes with modern designs, uncompromised quality, and timely delivery."
               />
 
-              <div
-                className="mb-12 lg:mb-0"
-                data-wow-delay=".15s"
-              >
+              <div className="mb-12 lg:mb-0" data-wow-delay=".15s">
                 <motion.div
                   className="mx-[-12px] flex flex-wrap"
                   initial="hidden"
@@ -110,12 +107,12 @@ const AboutSectionOne = () => {
 
                 {/* Detailed mission for depth */}
                 <p className="text-body-color/90 mt-4 text-base leading-relaxed">
-                  Established in 2010, Pawansut Construction Company in Jaipur
-                  transforms spaces into iconic landmarks through affordable,
-                  high-quality residential and commercial building solutions. We
-                  specialize in residential construction, commercial buildings,
-                  green construction, and expert remodeling services, tailored
-                  for homeowners, real estate developers, and commercial clients
+                  Established in 2010, Pawansut Builders in Jaipur transforms
+                  spaces into iconic landmarks through affordable, high-quality
+                  residential and commercial building solutions. We specialize
+                  in residential construction, commercial buildings, green
+                  construction, and expert remodeling services, tailored for
+                  homeowners, real estate developers, and commercial clients
                   across Jaipur. Our commitment to honest practices, timely
                   delivery, and client-centric service is backed by decades of
                   combined industry experience. Every project incorporates

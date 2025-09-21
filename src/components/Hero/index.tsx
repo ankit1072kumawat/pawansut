@@ -25,7 +25,7 @@ const Hero = () => {
         {/* Hero Content */}
         <div className="relative container mx-auto px-4 pt-[140px] pb-[120px] text-center md:pt-[180px] md:pb-[160px]">
           <h1 className="font-heading mb-6 text-4xl leading-tight font-extrabold sm:text-5xl md:text-6xl">
-            Pawansut Construction
+            Pawansut Builders
           </h1>
           <p className="mb-4 font-sans text-lg font-semibold text-gray-200 sm:text-xl md:text-2xl">
             Trusted Construction & Real Estate Solutions

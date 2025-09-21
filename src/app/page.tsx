@@ -15,7 +15,7 @@ import Video from "@/components/Video";
 import Accomplishments from "@/components/Accomplements";
 
 export const metadata: Metadata = {
-  title: "Pawansut Construction Company",
+  title: "Pawansut Builders",
   description: "Trusted Construction & Real Estate Solutions in Jaipur",
   // other metadata
 };

@@ -136,7 +136,7 @@ const Footer = () => {
           <div className="h-px w-full bg-linear-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-body-color text-center text-base dark:text-white">
-              © 2025 Pawansut Construction Company. All rights reserved.
+              © 2025 Pawansut Builders. All rights reserved.
               {/*  <a
                 href="http://uideck.com"
                 target="_blank"

@@ -89,11 +89,11 @@ const Contact = () => {
                     <p>
                       <strong>📧 Email:</strong>
                       <a
-                        href="mailto:pawansutconstructioncompany@gmail.com"
+                        href="mailto:info@pawansutbuilders.com"
                         className="text-blue-600 hover:underline"
                       >
                         {" "}
-                        pawansutconstructioncompany@gmail.com
+                        info@pawansutbuilders.com
                       </a>
                     </p>
 
