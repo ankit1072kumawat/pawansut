@@ -1,7 +1,5 @@
 import { Feature } from "@/types/feature";
 
-import "../../../public/images/planning.jpg"
-
 const featuresData: Feature[] = [
   {
     id: 1,
