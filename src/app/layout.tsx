@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "../styles/index.css";
 import Head from "next/head";
 
@@ -31,6 +32,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           {children}
+          <SpeedInsights />
           <Footer />
           <ScrollToTop />
         </Providers>
