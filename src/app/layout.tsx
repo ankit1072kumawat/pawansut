@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from "next/script";
 import "../styles/index.css";
 import Head from "next/head";
 
@@ -27,6 +28,18 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <head />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-TXH8CYYRTN"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-TXH8CYYRTN');
+          `}
+        </Script>
       </Head>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>
