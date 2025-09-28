@@ -42,6 +42,44 @@ export default function RootLayout({
             gtag('config', 'G-TXH8CYYRTN');
           `}
         </Script>
+        <title>Pawansut Builders — Contractors & Building Materials</title>
+        <meta
+          name="description"
+          content="Pawansut Builders provides contractor services and building materials for real estate projects."
+        />
+        <link rel="canonical" href="https://pawansutbuilders.com/" />
+
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Pawansut Builders",
+              url: "https://pawansutbuilders.com",
+              logo: "https://pawansutbuilders.com/images/logo/logo.svg",
+              image:
+                "https://pawansutbuilders.com/_next/image?url=%2Fimages%2Fabout%2Fabout-us.jpg&w=640&q=75",
+              description:
+                "Pawansut Builders provides contractor services and building materials for real estate projects. Trusted solutions for construction, renovation, and supply.",
+              telephone: "+91-9414322763",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "36B Laxmi Nagar, Niwaru raod",
+                addressLocality: "Jaipur",
+                addressRegion: "Rajasthan",
+                postalCode: "302012",
+                addressCountry: "IN",
+              },
+              openingHours: "Mo-Sa 09:00-18:00",
+              priceRange: "₹₹",
+              sameAs: [
+                "https://www.instagram.com/pawansut_builders",
+              ],
+            }),
+          }}
+        />
       </head>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>
