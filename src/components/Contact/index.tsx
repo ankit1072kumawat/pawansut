@@ -76,15 +76,15 @@ const Contact = () => {
                       Niwaru raod, Jhotwara, Jaipur, Rajasthan 302012
                     </p>
 
-                    {/* <p>
+                    <p>
                       <strong>📞 Phone:</strong>
                       <a
-                        href="tel:+919999999999"
+                        href="tel:+919414322763"
                         className="text-blue-600 hover:underline"
                       >
-                        +91 99999 99999
+                        +91 9414322763
                       </a>
-                    </p> */}
+                    </p>
 
                     <p>
                       <strong>📧 Email:</strong>
