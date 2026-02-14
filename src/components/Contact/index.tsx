@@ -1,6 +1,10 @@
+"use client"
 // import NewsLatterBox from "./NewsLatterBox";
+import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("xnjqyjwo");
+
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -17,9 +21,13 @@ const Contact = () => {
               {/* <p className="text-body-color mb-12 text-base font-medium">
                 Our team will get back to you ASAP via email.
               </p> */}
-              <form>
-                <div className="-mx-4 flex flex-wrap">
-                  {/* <div className="w-full px-4 md:w-1/2">
+              <form onSubmit={handleSubmit}>
+                {state.succeeded ? 
+                <div className="-mx-4 flex flex-wrap py-10">
+                  <p><b>Thank you for contacting Pawansut Builders!</b></p>
+                <p>Our team will reach out to you shortly...</p></div>
+                : <div className="-mx-4 flex flex-wrap">
+                  <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
                       <label
                         htmlFor="name"
@@ -29,9 +37,16 @@ const Contact = () => {
                       </label>
                       <input
                         type="text"
+                        name="name"
+                        required
                         placeholder="Enter your name"
                         className="border-stroke w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-hidden focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
+                       <ValidationError 
+                        prefix="Name" 
+                        field="name"
+                        errors={state.errors}
+      />
                     </div>
                   </div>
                   <div className="w-full px-4 md:w-1/2">
@@ -43,10 +58,17 @@ const Contact = () => {
                         Your Email
                       </label>
                       <input
+                      name="email"
                         type="email"
+                        required
                         placeholder="Enter your email"
                         className="border-stroke w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-hidden focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
+                      <ValidationError 
+                        prefix="Email" 
+                        field="email"
+                        errors={state.errors}
+      />
                     </div>
                   </div>
                   <div className="w-full px-4">
@@ -60,16 +82,24 @@ const Contact = () => {
                       <textarea
                         name="message"
                         rows={5}
+                        required
                         placeholder="Enter your Message"
                         className="border-stroke w-full resize-none rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-hidden focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       ></textarea>
+                      <ValidationError 
+                        prefix="Message" 
+                        field="message"
+                        errors={state.errors}
+      />
                     </div>
                   </div>
-                  <div className="w-full px-4">
-                    <button className="rounded-xs bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
-                      Submit Ticket
+                  <div className="w-full px-4 py-10">
+                    <button className="rounded-xs bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"  disabled={state.submitting}>
+                      Submit
                     </button>
-                  </div> */}
+                  </div>
+                  </div>}
+                  </form>
                   <div className="space-y-4 text-base text-gray-700 dark:text-white">
                     <p>
                       <strong>📍 Office Address:</strong> 36B Laxmi Nagar,
@@ -103,13 +133,11 @@ const Contact = () => {
                     </p>
                   </div>
                 </div>
-              </form>
             </div>
           </div>
           {/* <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
             <NewsLatterBox />
           </div> */}
-        </div>
       </div>
     </section>
   );
