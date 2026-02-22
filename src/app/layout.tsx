@@ -2,6 +2,7 @@
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import FloatingWhatsApp from "@/components/FloatingWhatsapp";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -87,6 +88,7 @@ export default function RootLayout({
           {children}
           <Analytics />
           <SpeedInsights />
+          <FloatingWhatsApp />
           <Footer />
           <ScrollToTop />
         </Providers>

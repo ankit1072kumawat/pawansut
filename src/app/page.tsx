@@ -13,6 +13,7 @@ import ServicesSliderPage from "@/components/serviceSlider";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import Accomplishments from "@/components/Accomplements";
+import Qualities from "@/components/Qualities";
 
 export const metadata: Metadata = {
   title: "Pawansut Builders",
@@ -29,6 +30,7 @@ export default function Home() {
       <ServicesSlider />
       {/* <Video /> */}
       <Accomplishments />
+      <Qualities/>
       <AboutSectionOne />
       <Brands />
       {/* <AboutSectionTwo /> */}
