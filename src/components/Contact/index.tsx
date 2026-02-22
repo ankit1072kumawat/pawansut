@@ -111,7 +111,7 @@ const Contact = () => {
                         rel="noopener noreferrer"
                         className="px-10 py-4 rounded-2xl bg-green-600 text-white font-semibold shadow-lg hover:shadow-xl hover:-translate-y-1 hover:bg-green-700 transition-all duration-300"
                       >
-                        WhatsApp Us
+                        WhatsApp
                       </a>
 
                     </div>

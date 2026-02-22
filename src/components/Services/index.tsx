@@ -4,75 +4,6 @@ import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-// const services = [
-//   {
-//     title: "Home Construction",
-//     desc: "Complete house construction services in Jaipur including planning, structural execution, and premium finishing with strict quality control.",
-//     points: [
-//       "Turnkey Construction",
-//       "RCC & Structural Work",
-//       "Premium Finishing",
-//       "On-Time Delivery",
-//     ],
-//     image: "/images/services/home-design.png",
-//   },
-//   {
-//     title: "Commercial Construction",
-//     desc: "Modern commercial buildings and office spaces built with compliance, durability, and efficient planning.",
-//     points: [
-//       "Office Buildings",
-//       "Retail Shops",
-//       "Showrooms",
-//       "Warehouses",
-//     ],
-//     image: "/images/services/commercial-design.jpg",
-//   },
-//   {
-//     title: "Farm House Construction",
-//     desc: "Luxury farmhouse construction in Jaipur with modern layouts and elegant outdoor planning.",
-//     points: [
-//       "Weekend Villas",
-//       "Landscape Design",
-//       "Luxury Finishing",
-//       "Custom Architecture",
-//     ],
-//     image: "/images/services/farmhouse-design.jpg",
-//   },
-//   {
-//     title: "Interior Design Solutions",
-//     desc: "Elegant and functional interiors tailored to your lifestyle and property type.",
-//     points: [
-//       "Modular Kitchen",
-//       "False Ceiling",
-//       "Lighting Design",
-//       "Complete Renovation",
-//     ],
-//     image: "/images/services/interior-design.jpg",
-//   },
-//   {
-//     title: "Front Elevation Construction",
-//     desc: "Create a powerful first impression with modern elevation and façade construction.",
-//     points: [
-//       "Modern Elevation",
-//       "Stone & Texture Finish",
-//       "Balcony Styling",
-//       "Custom Exterior Work",
-//     ],
-//     image: "/images/services/elevation-design.jpg",
-//   },
-//   {
-//     title: "Building Material Supply",
-//     desc: "Reliable supply of high-quality construction materials across Jaipur at competitive prices with assured quality standards.",
-//     points: [
-//       "Cement Supply",
-//       "Bricks & Blocks",
-//       "Sand & Aggregates",
-//       "Bulk Material Delivery",
-//     ],
-//     image: "/images/services/building-material.jpg",
-//   },
-// ];
-
 const services = [
   {
     title: "Home Construction",
@@ -166,7 +97,7 @@ export default function Services() {
     <div className="bg-background text-foreground overflow-hidden">
 
       {/* HERO */}
-      <section className="py-28 px-6 text-center max-w-4xl mx-auto">
+      <section className="py-15 px-6 text-center max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
           Construction Services in Jaipur
         </h1>
@@ -184,7 +115,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`relative grid md:grid-cols-2 gap-20 items-center fade-up opacity-0 translate-y-12 transition-all duration-1000 ${index % 2 !== 0 ? "md:flex-row-reverse" : ""
+              className={`relative grid md:grid-cols-2 gap-12 md:gap-20 items-center fade-up opacity-0 translate-y-12 transition-all duration-1000  ${index % 2 !== 0 ? "md:flex-row-reverse" : ""
                 }`}
             >
               {/* Big Background Number */}
@@ -194,7 +125,7 @@ export default function Services() {
 
               {/* IMAGE */}
               <div className={`${index % 2 !== 0 ? "md:order-2" : ""}`}>
-                <div className="relative w-full h-[450px] rounded-3xl overflow-hidden shadow-xl">
+                <div className="relative w-full h-[280px] sm:h-[350px] md:h-[450px] rounded-3xl overflow-hidden">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -205,7 +136,7 @@ export default function Services() {
               </div>
 
               {/* CONTENT */}
-              <div>
+              <div className="mb-12 md:mb-0">
                 <h2 className="text-3xl md:text-4xl font-semibold mb-6">
                   {service.title}
                 </h2>
