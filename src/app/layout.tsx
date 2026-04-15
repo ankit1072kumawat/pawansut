@@ -64,7 +64,7 @@ export default function RootLayout({
                 "https://pawansutbuilders.com/_next/image?url=%2Fimages%2Fabout%2Fabout-us.jpg&w=640&q=75",
               description:
                 "Pawansut Builders provides contractor services and building materials for real estate projects. Trusted solutions for construction, renovation, and supply.",
-              telephone: "+91-9414322763",
+              telephone: "+91-7976300874",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "36B Laxmi Nagar, Niwaru raod",

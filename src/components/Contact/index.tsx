@@ -106,7 +106,7 @@ const Contact = () => {
 
                       {/* WhatsApp Button */}
                       <a
-                        href="https://wa.me/919414322763?text=Hi%20Pawansut%20Builders,%20I%20want%20to%20discuss%20my%20project."
+                        href="https://wa.me/917976300874?text=Hi%20Pawansut%20Builders,%20I%20want%20to%20discuss%20my%20project."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-10 py-4 rounded-2xl bg-green-600 text-white font-semibold shadow-lg hover:shadow-xl hover:-translate-y-1 hover:bg-green-700 transition-all duration-300"
@@ -126,10 +126,10 @@ const Contact = () => {
                 <p>
                   <strong>📞 Phone:</strong>
                   <a
-                    href="tel:+919414322763"
+                    href="tel:+917976300874"
                     className="text-blue-600 hover:underline"
                   >
-                    +91 9414322763
+                    +91 7976300874
                   </a>
                 </p>
 
