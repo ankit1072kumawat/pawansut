@@ -5,9 +5,12 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Page",
-  description: "",
-  // other metadata
+  title: "About Pawansut Builders",
+  description:
+    "Meet Pawansut Builders, a Jaipur-based construction team known for practical planning, durable workmanship, and a straightforward approach to every project.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 const AboutPage = () => {

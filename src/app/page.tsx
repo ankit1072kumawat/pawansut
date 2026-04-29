@@ -16,9 +16,12 @@ import Accomplishments from "@/components/Accomplements";
 import Qualities from "@/components/Qualities";
 
 export const metadata: Metadata = {
-  title: "Pawansut Builders",
-  description: "Trusted Construction & Real Estate Solutions in Jaipur",
-  // other metadata
+  title: "Home Construction Company in Jaipur",
+  description:
+    "Start your building project with Pawansut Builders in Jaipur, from design planning and materials to construction, interiors, elevation work, and final handover.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function Home() {

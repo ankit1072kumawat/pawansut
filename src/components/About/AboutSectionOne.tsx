@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 
 import SectionTitle from "../Common/SectionTitle";
 
@@ -13,55 +12,21 @@ const listContainer = {
   },
 };
 
-function useTypingEffect(text: string, speed = 40, trigger: boolean) {
-  const [displayed, setDisplayed] = useState("");
-
-  useEffect(() => {
-    if (!trigger) return;
-    setDisplayed(""); 
-    let i = 0;
-    const interval = setInterval(() => {
-      setDisplayed(text.slice(0, i + 1));
-      i++;
-      if (i === text.length) clearInterval(interval);
-    }, speed);
-    return () => clearInterval(interval);
-  }, [text, speed, trigger]);
-
-  return displayed;
-}
-
 // ✅ Single List Item
 const List = ({ text }: { text: string }) => {
-  const [inView, setInView] = useState(false);
-  const typedText = useTypingEffect(text, 40, inView);
-
   return (
     <motion.div
       className="text-body-color mb-5 flex items-center text-lg font-medium"
       initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0, transition: { duration: 0.3 } }}
-      onViewportEnter={() => setInView(true)} // trigger typing when item is visible
-      onViewportLeave={() => setInView(false)} // reset when leaving
-      viewport={{ once: false, amount: 0.8 }} // replay every time
+      viewport={{ once: true, amount: 0.8 }}
     >
       <span className="bg-primary/10 text-primary mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md">
-        ✅
+        {checkIcon}
       </span>
-      <span>{typedText}</span>
+      <span>{text}</span>
     </motion.div>
   );
-};
-
-import type { Variants } from "framer-motion";
-
-const tickVariant: Variants = {
-  hidden: { scale: 0, opacity: 0 },
-  visible: {
-    scale: 1,
-    opacity: 1,
-    transition: { type: "spring" as const, stiffness: 400, damping: 10 },
-  },
 };
 
 const checkIcon = (

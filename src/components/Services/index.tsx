@@ -98,9 +98,9 @@ export default function Services() {
 
       {/* HERO */}
       <section className="py-15 px-6 text-center max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
+        <h2 className="text-4xl md:text-6xl font-bold mb-6">
           Construction Services in Jaipur
-        </h1>
+        </h2>
         <p className="text-lg text-muted-foreground">
           Pawansut Builders delivers high-quality residential and commercial
           construction services across Jaipur with craftsmanship, transparency,
@@ -130,6 +130,7 @@ export default function Services() {
                     src={service.image}
                     alt={service.title}
                     fill
+                    sizes="(min-width: 768px) 50vw, 100vw"
                     className="object-cover hover:scale-105 transition duration-700"
                   />
                 </div>

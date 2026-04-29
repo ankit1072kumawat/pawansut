@@ -27,7 +27,8 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="text-body-color dark:text-body-color-dark mb-9 text-base leading-relaxed">
-                  Crafting quality spaces. Creating lasting value.
+                  Home construction, commercial construction, interiors, and
+                  building material supply in Jaipur.
                 </p>
                 <div className="flex items-center">
                   <a
@@ -60,20 +61,28 @@ const Footer = () => {
                   Useful Links
                 </h2>
                 <ul>
-                  {/* <li>
+                  <li>
                     <Link
-                      href="/project"
+                      href="/services"
                       className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
                     >
-                      Projects
+                      Construction Services
                     </Link>
-                  </li> */}
+                  </li>
                   <li>
                     <Link
                       href="/about"
                       className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
                     >
                       About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/contact"
+                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                    >
+                      Contact
                     </Link>
                   </li>
                 </ul>
@@ -83,23 +92,31 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Terms
+                  Services
                 </h2>
                 <ul>
                   <li>
                     <Link
-                      href="/"
+                      href="/services"
                       className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
                     >
-                      TOS
+                      Home Construction
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/services"
                       className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
                     >
-                      Privacy Policy
+                      Commercial Construction
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services"
+                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                    >
+                      Building Materials
                     </Link>
                   </li>
                 </ul>
@@ -109,24 +126,29 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Support & Help
+                  Contact Details
                 </h2>
                 <ul>
                   <li>
-                    <Link
-                      href="/"
+                    <a
+                      href="tel:+917976300874"
                       className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
                     >
-                      Terms of Use
-                    </Link>
+                      +91 7976300874
+                    </a>
                   </li>
                   <li>
-                    <Link
-                      href="/about"
+                    <a
+                      href="mailto:info@pawansutbuilders.com"
                       className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
                     >
-                      About
-                    </Link>
+                      info@pawansutbuilders.com
+                    </a>
+                  </li>
+                  <li>
+                    <span className="text-body-color dark:text-body-color-dark mb-4 inline-block text-base">
+                      Jhotwara, Jaipur, Rajasthan 302012
+                    </span>
                   </li>
                 </ul>
               </div>

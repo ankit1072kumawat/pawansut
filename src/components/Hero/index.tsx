@@ -28,7 +28,7 @@ const Hero = () => {
             Pawansut Builders
           </h1>
           <p className="mb-4 font-sans text-lg font-semibold text-gray-200 sm:text-xl md:text-2xl">
-            Trusted Construction & Real Estate Solutions
+            Trusted Home Construction Company in Jaipur
           </p>
 
           <p className="mx-auto mb-10 max-w-2xl text-base text-gray-300 sm:text-lg md:text-xl">
@@ -49,7 +49,7 @@ const Hero = () => {
               href="#projects"
               className="rounded-xl border border-white px-6 py-2 text-sm font-semibold text-white shadow-lg transition hover:bg-white hover:text-gray-900 sm:px-8 sm:py-4 sm:text-lg"
             >
-              View Projects
+              View Jaipur Projects
             </a>
           </div>
         </div>

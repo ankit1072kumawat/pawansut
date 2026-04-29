@@ -3,12 +3,12 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-// ✅ Simple counter animation hook
 function useCounter(target: number, duration = 2000, trigger: boolean) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(target);
 
   useEffect(() => {
     if (!trigger) return;
+    if (target <= 0) return;
     let start = 0;
     const stepTime = Math.abs(Math.floor(duration / target));
     const timer = setInterval(() => {
@@ -22,9 +22,17 @@ function useCounter(target: number, duration = 2000, trigger: boolean) {
   return count;
 }
 
-const Stat = ({ number, label }: { number: number; label: string }) => {
+const Stat = ({
+  number,
+  label,
+  showPlus = true,
+}: {
+  number: number;
+  label: string;
+  showPlus?: boolean;
+}) => {
   const [inView, setInView] = useState(false);
-  const count = useCounter(number, 2000, inView); // animated number
+  const count = useCounter(number, 2000, inView);
 
   return (
     <motion.div
@@ -32,12 +40,12 @@ const Stat = ({ number, label }: { number: number; label: string }) => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       onViewportEnter={() => setInView(true)}
-      onViewportLeave={() => setInView(false)}
-      viewport={{ once: false, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.5 }}
     >
-      {/* Number */}
-      <span className="text-primary text-5xl font-extrabold">{count}+</span>
-      {/* Label */}
+      <span className="text-primary text-5xl font-extrabold">
+        {count}
+        {showPlus ? "+" : ""}
+      </span>
       <span className="mt-2 text-base font-medium text-gray-300">{label}</span>
     </motion.div>
   );
@@ -57,9 +65,8 @@ export default function Accomplishments() {
           Our Accomplishments
         </motion.h2>
 
-        {/* Stats */}
         <div className="flex flex-col items-center justify-center gap-10 md:flex-row md:gap-20">
-          <Stat number={200} label="Days Guarantee To Build" />
+          <Stat number={200} showPlus={false} label="Day Build Guarantee" />
           <div className="bg-primary/60 hidden h-12 w-px md:block" />
           <Stat number={50} label="Design Experts" />
           <div className="bg-primary/60 hidden h-12 w-px md:block" />
