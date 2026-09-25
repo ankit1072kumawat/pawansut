@@ -1,6 +1,7 @@
 "use client"
 // import NewsLatterBox from "./NewsLatterBox";
 import { useForm, ValidationError } from '@formspree/react';
+import { business, fullAddress } from "@/lib/site";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xnjqyjwo");
@@ -10,11 +11,7 @@ const Contact = () => {
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
-            <div
-              className="shadow-three dark:bg-gray-dark mb-12 rounded-xs bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
-              data-wow-delay=".15s
-              "
-            >
+            <div className="shadow-three dark:bg-gray-dark mb-12 rounded-xs bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]">
               <h2 className="mb-3 text-2xl font-bold text-black sm:text-3xl lg:text-2xl xl:text-3xl dark:text-white">
                 Need Help? Get in Touch!
               </h2>
@@ -117,37 +114,55 @@ const Contact = () => {
                     </div>
                   </div>}
               </form>
-              <div className="space-y-4 text-base text-gray-700 dark:text-white">
+              <address className="space-y-4 text-base text-gray-700 not-italic dark:text-white">
                 <p>
-                  <strong>📍 Office Address:</strong> 36B Laxmi Nagar,
-                  Niwaru raod, Jhotwara, Jaipur, Rajasthan 302012
+                  <strong>📍 Office Address:</strong> {fullAddress}
                 </p>
 
                 <p>
-                  <strong>📞 Phone:</strong>
+                  <strong>📞 Phone:</strong>{" "}
                   <a
-                    href="tel:+917976300874"
+                    href={`tel:${business.phoneE164}`}
                     className="text-blue-600 hover:underline"
                   >
-                    +91 7976300874
+                    {business.phone}
                   </a>
                 </p>
 
                 <p>
-                  <strong>📧 Email:</strong>
+                  <strong>📧 Email:</strong>{" "}
                   <a
-                    href="mailto:info@pawansutbuilders.com"
+                    href={`mailto:${business.email}`}
                     className="text-blue-600 hover:underline"
                   >
-                    {" "}
-                    info@pawansutbuilders.com
+                    {business.email}
                   </a>
                 </p>
 
                 <p>
-                  <strong>🕒 Working Hours:</strong> Mon – Sat: 9:00 AM –
-                  8:00 PM
+                  <strong>🕒 Working Hours:</strong> Mon – Sat: 9:00 AM – 8:00 PM
                 </p>
+
+                <p>
+                  <a
+                    href={business.mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    Get directions on Google Maps →
+                  </a>
+                </p>
+              </address>
+
+              <div className="mt-8 overflow-hidden rounded-xs border border-gray-200 dark:border-gray-700">
+                <iframe
+                  title={`Map to ${business.name}, Jhotwara, Jaipur`}
+                  src={business.mapEmbedUrl}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="h-[300px] w-full"
+                />
               </div>
             </div>
           </div>

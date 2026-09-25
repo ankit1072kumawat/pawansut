@@ -24,11 +24,12 @@ const Header = () => {
   };
   useEffect(() => {
     window.addEventListener("scroll", handleStickyNavbar);
-  });
+    return () => window.removeEventListener("scroll", handleStickyNavbar);
+  }, []);
 
   // submenu handler
   const [openIndex, setOpenIndex] = useState(-1);
-  const handleSubmenu = (index) => {
+  const handleSubmenu = (index: number) => {
     if (openIndex === index) {
       setOpenIndex(-1);
     } else {
@@ -108,18 +109,14 @@ const Header = () => {
                     {menuData.map((menuItem, index) => (
                       <li key={index} className="group relative">
                         {menuItem.path ? (
-                          // <Link
-                          //   href={menuItem.path}
-                          //   className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                          //     usePathName === menuItem.path
-                          //       ? "text-primary dark:text-white"
-                          //       : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
-                          //   }`}
-                          // >
-                          //   {menuItem.title}
-                          // </Link>
                           <Link
                             href={menuItem.path}
+                            onClick={() => setNavbarOpen(false)}
+                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                              usePathName === menuItem.path
+                                ? "text-primary dark:text-white"
+                                : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                            }`}
                           >
                             {menuItem.title}
                           </Link>

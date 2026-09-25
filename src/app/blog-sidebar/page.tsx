@@ -5,9 +5,12 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Details Page ",
-  description: "",
-  // other metadata
+  title: "Blog Details",
+  description: "Template page hidden from search until real content is added.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 const BlogSidebarPage = () => {

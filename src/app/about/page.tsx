@@ -1,13 +1,19 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
+import { breadcrumbJsonLd, jsonLdScript } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "About Pawansut Builders",
+  title: "About Pawansut Builders — Construction Company in Jaipur",
   description:
-    "Meet Pawansut Builders, a Jaipur-based construction team known for practical planning, durable workmanship, and a straightforward approach to every project.",
+    "Pawansut Builders has been building homes and commercial spaces in Jaipur since 2010, with an in-house team of engineers and supervisors and a straightforward, on-time approach.",
+  keywords: [
+    "about Pawansut Builders",
+    "construction company in Jaipur since 2010",
+    "trusted builders Jaipur",
+    "civil contractor Jaipur",
+  ],
   alternates: {
     canonical: "/about",
   },
@@ -16,12 +22,14 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <>
+      <script
+        {...jsonLdScript(breadcrumbJsonLd([{ name: "About", path: "/about" }]))}
+      />
       <Breadcrumb
         pageName="About Us"
-        description="We are committed to redefining the standards of construction and real estate across India. With a passion for quality and a vision for innovation, we specialize in delivering robust residential, commercial, and infrastructure projects that stand the test of time."
+        description="Since 2010, Pawansut Builders has delivered budget-friendly, modern homes and commercial projects across Jaipur — with an in-house team, quality materials, and on-time handovers."
       />
       <AboutSectionOne />
-      {/* <AboutSectionTwo /> */}
     </>
   );
 };

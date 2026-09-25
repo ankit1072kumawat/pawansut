@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { business, fullAddress } from "@/lib/site";
 
 const Footer = () => {
   return (
@@ -32,8 +33,8 @@ const Footer = () => {
                 </p>
                 <div className="flex items-center">
                   <a
-                    href="https://www.instagram.com/pawansut_c_c?igsh=a3Rtbm9sYmJ0djdm"
-                    aria-label="social-link"
+                    href={business.instagram}
+                    aria-label="Pawansut Builders on Instagram"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mr-6 duration-300"
@@ -48,7 +49,14 @@ const Footer = () => {
                     >
                       <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                      <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+                      <line
+                        x1="17.5"
+                        y1="6.5"
+                        x2="17.51"
+                        y2="6.5"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      />
                     </svg>
                   </a>
                 </div>
@@ -67,6 +75,14 @@ const Footer = () => {
                       className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
                     >
                       Construction Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/service-areas"
+                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                    >
+                      Areas We Serve in Jaipur
                     </Link>
                   </li>
                   <li>
@@ -128,29 +144,36 @@ const Footer = () => {
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Contact Details
                 </h2>
-                <ul>
-                  <li>
-                    <a
-                      href="tel:+917976300874"
-                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
-                    >
-                      +91 7976300874
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="mailto:info@pawansutbuilders.com"
-                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
-                    >
-                      info@pawansutbuilders.com
-                    </a>
-                  </li>
-                  <li>
-                    <span className="text-body-color dark:text-body-color-dark mb-4 inline-block text-base">
-                      Jhotwara, Jaipur, Rajasthan 302012
-                    </span>
-                  </li>
-                </ul>
+                <address className="not-italic">
+                  <ul>
+                    <li>
+                      <a
+                        href={`tel:${business.phoneE164}`}
+                        className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                      >
+                        {business.phone}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href={`mailto:${business.email}`}
+                        className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                      >
+                        {business.email}
+                      </a>
+                    </li>
+                    <li>
+                      <span className="text-body-color dark:text-body-color-dark mb-4 inline-block text-base">
+                        {fullAddress}
+                      </span>
+                    </li>
+                    <li>
+                      <span className="text-body-color dark:text-body-color-dark inline-block text-base">
+                        Mon–Sat: 9:00 AM – 8:00 PM
+                      </span>
+                    </li>
+                  </ul>
+                </address>
               </div>
             </div>
           </div>
@@ -158,7 +181,8 @@ const Footer = () => {
           <div className="h-px w-full bg-linear-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-body-color text-center text-base dark:text-white">
-              © 2025 Pawansut Builders. All rights reserved.
+              © {new Date().getFullYear()} Pawansut Builders. All rights
+              reserved.
               {/*  <a
                 href="http://uideck.com"
                 target="_blank"

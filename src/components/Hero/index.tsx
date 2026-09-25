@@ -7,16 +7,17 @@ const Hero = () => {
         className="relative z-10 overflow-hidden bg-gray-900 text-white"
       >
         {/* Background Video */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0" aria-hidden="true">
           <video
             autoPlay
             loop
             muted
             playsInline
+            preload="metadata"
+            poster="/images/video/video.jpg"
             className="h-full w-full object-cover"
           >
             <source src="/images/video/hero.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
           </video>
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black/60" />
@@ -33,8 +34,9 @@ const Hero = () => {
 
           <p className="mx-auto mb-10 max-w-2xl text-base text-gray-300 sm:text-lg md:text-xl">
             From blueprint to key handover, we deliver high-quality residential,
-            commercial, and infrastructure projects with unmatched reliability
-            and modern design.
+            commercial, farmhouse, interior, and elevation projects across
+            Jaipur with reliable timelines, quality materials, and modern
+            design.
           </p>
 
           {/* CTA Buttons */}

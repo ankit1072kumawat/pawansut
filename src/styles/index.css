@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap')
-layer(base);
-
 @import 'tailwindcss';
 
 @custom-variant dark (&:is(.dark *));
@@ -13,6 +10,13 @@ layer(base);
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --breakpoint-2xl: 1400px;
+
+  --font-sans:
+    var(--font-poppins), ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-heading:
+    var(--font-montserrat), ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   --color-current: currentColor;
   --color-transparent: transparent;
@@ -73,6 +77,15 @@ layer(base);
   color utility to any element that depends on these defaults.
 */
 @layer base {
+  html {
+    /* keep in-page anchor targets clear of the fixed header */
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+
   *,
   ::after,
   ::before,
@@ -119,12 +132,6 @@ layer(base);
 @utility box {
   input#checkboxLabel:checked ~ & span {
     @apply opacity-100;
-  }
-}
-
-@layer base {
-  body {
-    font-family: "Inter", sans-serif;
   }
 }
 

@@ -54,15 +54,15 @@ const SectionTitle = ({ title, paragraph, center, paragraphClass }: SectionTitle
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      viewport={{ amount: 0.3, once: false }}
+      viewport={{ amount: 0.3, once: true }}
     >
       {/* Title */}
       <motion.h2
-        className="font-montserrat relative inline-block text-3xl leading-tight font-extrabold text-gray-900 sm:text-4xl lg:text-5xl dark:text-white"
+        className="font-heading relative inline-block text-3xl leading-tight font-extrabold text-gray-900 sm:text-4xl lg:text-5xl dark:text-white"
         initial={{ scale: 0.9, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
-        viewport={{ amount: 0.3, once: false }}
+        viewport={{ amount: 0.3, once: true }}
       >
         {title}
         <motion.span
@@ -77,7 +77,7 @@ const SectionTitle = ({ title, paragraph, center, paragraphClass }: SectionTitle
       {/* Paragraph */}
       {paragraph && (
         <motion.p
-          className="font-poppins mt-6 text-lg leading-relaxed text-gray-600 sm:text-xl dark:text-gray-300"
+          className="font-sans mt-6 text-lg leading-relaxed text-gray-600 sm:text-xl dark:text-gray-300"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}

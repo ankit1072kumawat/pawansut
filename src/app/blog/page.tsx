@@ -5,8 +5,13 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Page",
-  description: "",
+  title: "Project Gallery",
+  description:
+    "Project gallery for Pawansut Builders construction work in Jaipur.",
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 const Blog = () => {

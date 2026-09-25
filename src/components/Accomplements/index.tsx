@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 function useCounter(target: number, duration = 2000, trigger: boolean) {
-  const [count, setCount] = useState(target);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     if (!trigger) return;

@@ -1,17 +1,100 @@
-"use client";
-
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import FloatingWhatsApp from "@/components/FloatingWhatsapp";
 import ScrollToTop from "@/components/ScrollToTop";
-import { Inter } from "next/font/google";
+import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
+import { Montserrat, Poppins } from "next/font/google";
 import "../styles/index.css";
-import Head from "next/head";
+import { Providers } from "./providers";
+import { siteUrl, business, primaryKeywords } from "@/lib/site";
+import { localBusinessJsonLd, websiteJsonLd } from "@/lib/jsonLd";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: {
+    default:
+      "Pawansut Builders | Construction Company in Jaipur (Jhotwara)",
+    template: "%s | Pawansut Builders Jaipur",
+  },
+  description:
+    "Pawansut Builders is a construction company in Jhotwara, Jaipur handling home construction, commercial buildings, farmhouses, interiors, and elevation work within about 30 km of the city.",
+  applicationName: "Pawansut Builders",
+  authors: [{ name: "Pawansut Builders" }],
+  creator: "Pawansut Builders",
+  publisher: "Pawansut Builders",
+  keywords: primaryKeywords,
+  category: "Construction",
+  alternates: {
+    canonical: "/",
+  },
+  formatDetection: {
+    telephone: true,
+    address: true,
+    email: true,
+  },
+  other: {
+    "geo.region": business.regionCode,
+    "geo.placename": `${business.locality}, ${business.region}`,
+    "geo.position": `${business.geo.latitude};${business.geo.longitude}`,
+    ICBM: `${business.geo.latitude}, ${business.geo.longitude}`,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: siteUrl,
+    siteName: "Pawansut Builders",
+    title: "Pawansut Builders | Home Construction Company in Jaipur",
+    description:
+      "Plan and build your residential or commercial project in Jaipur with a construction team that keeps design, materials, timelines, and finishing under one roof.",
+    images: [
+      {
+        url: "/images/about/about-us.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Pawansut Builders construction work in Jaipur",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pawansut Builders | Home Construction Company in Jaipur",
+    description:
+      "Pawansut Builders helps Jaipur homeowners and businesses move from planning to handover with clear execution and durable construction.",
+    images: ["/images/about/about-us.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/images/favicon.png",
+  },
+};
 
 export default function RootLayout({
   children,
@@ -19,18 +102,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
+    <html
+      suppressHydrationWarning
+      lang="en-IN"
+      className={`${montserrat.variable} ${poppins.variable}`}
+    >
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([localBusinessJsonLd, websiteJsonLd]),
+          }}
+        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-TXH8CYYRTN"
           strategy="afterInteractive"
@@ -43,46 +126,8 @@ export default function RootLayout({
             gtag('config', 'G-TXH8CYYRTN');
           `}
         </Script>
-        <title>Pawansut Builders — Contractors & Building Materials</title>
-        <meta
-          name="description"
-          content="Pawansut Builders provides contractor services and building materials for real estate projects."
-        />
-        <link rel="canonical" href="https://pawansutbuilders.com/" />
-
-        {/* JSON-LD Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "Pawansut Builders",
-              url: "https://pawansutbuilders.com",
-              logo: "https://pawansutbuilders.com/images/logo/logo.svg",
-              image:
-                "https://pawansutbuilders.com/_next/image?url=%2Fimages%2Fabout%2Fabout-us.jpg&w=640&q=75",
-              description:
-                "Pawansut Builders provides contractor services and building materials for real estate projects. Trusted solutions for construction, renovation, and supply.",
-              telephone: "+91-7976300874",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "36B Laxmi Nagar, Niwaru raod",
-                addressLocality: "Jaipur",
-                addressRegion: "Rajasthan",
-                postalCode: "302012",
-                addressCountry: "IN",
-              },
-              openingHours: "Mo-Sa 09:00-18:00",
-              priceRange: "₹₹",
-              sameAs: [
-                "https://www.instagram.com/pawansut_builders",
-              ],
-            }),
-          }}
-        />
       </head>
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+      <body className="bg-[#FCFCFC] dark:bg-black">
         <Providers>
           <Header />
           {children}
@@ -96,6 +141,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-import { Providers } from "./providers";
-

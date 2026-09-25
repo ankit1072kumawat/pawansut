@@ -17,7 +17,7 @@ const SingleProject = ({ project }: { project: Project }) => {
           alt={title}
           fill
           sizes="(min-width: 1280px) 420px, (min-width: 768px) 50vw, 100vw"
-          className="rounded-t-xl  object-center transition-transform duration-300"
+          className="rounded-t-xl object-cover object-center transition-transform duration-300 group-hover:scale-105"
         />
       </div>
 
@@ -35,7 +35,7 @@ const SingleProject = ({ project }: { project: Project }) => {
         <div className="flex items-center justify-between">
           {/* Author */}
           <div>
-            <h4 className="text-dark mb-1 text-sm font-large dark:text-white">
+            <h4 className="text-dark mb-1 text-sm font-semibold dark:text-white">
               {author.name}
             </h4>
             <p className="text-body-color text-xs">{author.Location}</p>

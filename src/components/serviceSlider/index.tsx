@@ -13,22 +13,27 @@ import SectionTitle from "../Common/SectionTitle";
 const services = [
   {
     title: "Home Construction",
+    desc: "Turnkey house construction in Jaipur from planning and structure to finishing.",
     image: "/images/services/home-design.png",
   },
   {
     title: "Commercial Construction",
+    desc: "Durable commercial buildings, shops, showrooms, and office spaces.",
     image: "/images/services/commercial-design.jpg",
   },
   {
-    title: "Farm house Construction",
+    title: "Farm House Construction",
+    desc: "Custom farmhouse and weekend villa construction with outdoor planning.",
     image: "/images/services/farmhouse-design.jpg",
   },
   {
-    title: "Interior design Solutions",
+    title: "Interior Design Solutions",
+    desc: "Practical interiors, modular kitchens, ceilings, lighting, and renovation work.",
     image: "/images/services/interior-design.jpg",
   },
   {
-    title: "Front elevation construction",
+    title: "Front Elevation Construction",
+    desc: "Modern exterior elevation, facade, balcony, stone, and texture work.",
     image: "/images/services/elevation-design.jpg",
   },
 ];
@@ -65,6 +70,9 @@ export default function ServicesSlider() {
                   <h3 className="text-xl leading-snug font-semibold text-gray-900 dark:text-white">
                     {s.title}
                   </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                    {s.desc}
+                  </p>
                 </div>
 
                 {/* Image */}

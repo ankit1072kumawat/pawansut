@@ -5,8 +5,11 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Blog Details Page",
-  description: "",
-  // other metadata
+  description: "Template page hidden from search until real content is added.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 const BlogDetailsPage = () => {

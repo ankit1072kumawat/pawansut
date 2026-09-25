@@ -7,6 +7,7 @@ export default function FloatingWhatsApp() {
                 href="https://wa.me/917976300874?text=Hi%20Pawansut%20Builders,%20I%20am%20interested%20in%20your%20construction%20services%20in%20Jaipur."
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Chat with Pawansut Builders on WhatsApp"
                 className="fixed bottom-20 right-6 z-50 w-14 h-14 flex items-center justify-center rounded-full bg-green-600 shadow-lg hover:scale-110 transition-transform duration-300"
             >
                 {/* WhatsApp SVG Icon */}
@@ -20,7 +21,7 @@ export default function FloatingWhatsApp() {
             </a>
 
             {/* Pulse Ring */}
-            <div className="fixed bottom-20 right-6 z-40 w-14 h-14 rounded-full bg-green-600 opacity-30 animate-ping"></div>
+            <div className="pointer-events-none fixed bottom-20 right-6 z-40 w-14 h-14 rounded-full bg-green-600 opacity-30 animate-ping"></div>
         </>
     );
 }

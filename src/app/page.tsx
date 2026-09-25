@@ -1,24 +1,22 @@
 import { Metadata } from "next";
 import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Projects from "@/components/Projects";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import Pricing from "@/components/Pricing";
 import ServicesSlider from "@/components/serviceSlider";
-import ServicesSliderPage from "@/components/serviceSlider";
-import Testimonials from "@/components/Testimonials";
-import Video from "@/components/Video";
 import Accomplishments from "@/components/Accomplements";
 import Qualities from "@/components/Qualities";
+import ServiceAreas from "@/components/ServiceAreas";
+import Faq, { homeFaqs } from "@/components/Faq";
+import { faqPageJsonLd, jsonLdScript } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
-  title: "Home Construction Company in Jaipur",
+  title: "Construction Company in Jaipur | Home & Commercial Builders",
   description:
-    "Start your building project with Pawansut Builders in Jaipur, from design planning and materials to construction, interiors, elevation work, and final handover.",
+    "Pawansut Builders is a Jaipur construction company for home construction, commercial buildings, farmhouses, interiors, and elevation work — serving Jhotwara, Vaishali Nagar, Mansarovar, Sikar Road, and areas within 30 km.",
   alternates: {
     canonical: "/",
   },
@@ -27,19 +25,18 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <script {...jsonLdScript(faqPageJsonLd(homeFaqs))} />
       <ScrollUp />
       <Hero />
       <Features />
       <ServicesSlider />
-      {/* <Video /> */}
       <Accomplishments />
-      <Qualities/>
+      <Qualities />
       <AboutSectionOne />
+      <ServiceAreas />
       <Brands />
-      {/* <AboutSectionTwo /> */}
-      {/* <Testimonials /> */}
-      {/* <Pricing /> */}
       <Projects />
+      <Faq />
       <Contact />
     </>
   );

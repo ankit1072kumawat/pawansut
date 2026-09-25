@@ -98,13 +98,14 @@ export default function Services() {
 
       {/* HERO */}
       <section className="py-15 px-6 text-center max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-6xl font-bold mb-6">
-          Construction Services in Jaipur
+        <h2 className="text-4xl md:text-6xl font-bold mb-6 font-heading">
+          What Pawansut Builders Delivers
         </h2>
         <p className="text-lg text-muted-foreground">
-          Pawansut Builders delivers high-quality residential and commercial
-          construction services across Jaipur with craftsmanship, transparency,
-          and precision.
+          Residential and commercial construction across Jaipur and within about
+          30&nbsp;km — Jhotwara, Vaishali Nagar, Mansarovar, Sikar Road, Kalwar
+          Road and beyond — built with craftsmanship, transparency, and fixed
+          timelines.
         </p>
       </section>
 
